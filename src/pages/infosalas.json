@@ -1,0 +1,341 @@
+[
+    {
+        "id": 1,
+        "nombre": "Barbie",
+        "calificacion": 4,
+        "reviews": 310,
+        "sinopsis": "Barbie es una muñeca de colección, tu puedes ser como ella, puedes ser lo que quieras ser.",
+        "img": "https://m.media-amazon.com/images/I/71+I3hfh5mL._AC_UF894,1000_QL80_.jpg",
+        "categoria": "Animada",
+        "tags": [
+            "Drama",
+            "Familia",
+            "Fantasía"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "14:20 p.m.",
+                "horaFin": "16:16 p.m.",
+                "sala": {
+                    "idsala": 1,
+                    "nombre": "sala 1"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "16:40 p.m.",
+                "horaFin": "18:36 p.m.",
+                "sala": {
+                    "idsala": 1,
+                    "nombre": "sala 1"
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Superman Hombre de Acero",
+        "calificacion": 3,
+        "reviews": 210,
+        "sinopsis": " Criado en el planeta Krypton, Kal-El fue enviado a la Tierra en una nave espacial antes de la destrucción de su planeta natal. Sus poderes provienen de la radiación solar amarilla de la Tierra.",
+        "img": "https://i5.walmartimages.com/seo/DC-Comics-12-Inch-Superman-Action-Figure-Collectible-Kids-Toys-for-Boys-and-Girls_c565678d-aeb2-41d1-8972-f0641fcc50e9.8bc9990e672f84047d7672b87628dfcc.jpeg",
+        "categoria": "Acción",
+        "tags": [
+            "Acción"
+            
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "19:00 p.m.",
+                "horaFin": "20:30 p.m.",
+                "sala": {
+                    "idsala": 2,
+                    "nombre": "sala 2"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "21:00 p.m.",
+                "horaFin": "22:30 p.m.",
+                "sala": {
+                    "idsala": 2,
+                    "nombre": "sala 2"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Barbie tu amiga",
+        "calificacion": 4,
+        "reviews": 410,
+        "categoria": "Animada",
+        "sinopsis": "¡La muñeca que lo empezó todo! Con su icónico vestido a rayas y su cabello rubio, esta Barbie sigue siendo un ícono de estilo y elegancia. ¡Un clásico atemporal que nunca pasa de moda!.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxXspAOR8aHoAdvJ0bQJjyt0o3i4UyGyW9Vg&s",
+        "tags": [
+            "Familia",
+            "Animación",
+            "Fantasía"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "14:00 p.m.",
+                "horaFin": "15:40 p.m.",
+                "sala": {
+                    "idsala": 2,
+                    "nombre": "sala 2"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "16:00 p.m.",
+                "horaFin": "17:40 p.m.",
+                "sala": {
+                    "idsala": 2,
+                    "nombre": "sala 2"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Barbie Profesora",
+        "calificacion": 3,
+        "reviews": 327,
+        "sinopsis": "¡La maestra más divertida del recreo! Con su pizarra, tiza y una sonrisa contagiosa, esta Barbie demostró que las mujeres pueden ser inteligentes y exitosas en cualquier campo. ¡Incluso en la sala de clases!",
+        "img": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/128515737_01/w=1500,h=1500,fit=pad",
+        "categoria": "Animada",
+         "tags": [
+            "Ciencia ficción",
+            "Familia"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "14:10 p.m.",
+                "horaFin": "15:50 p.m.",
+                "sala": {
+                    "idsala": 3,
+                    "nombre": "sala 3"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "16:20 p.m.",
+                "horaFin": "18:00 p.m.",
+                "sala": {
+                    "idsala": 3,
+                    "nombre": "sala 3"
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Spider-Man: El Amigable Vecindario",
+        "calificacion": 2,
+        "reviews": 210,
+        "categoria": "Acción",
+        "sinopsis": "Spider-Man es un adolescente que lucha contra el crimen mientras intenta llevar una vida normal. Es conocido por su sentido del humor y su gran corazón.",
+        "img": "https://exitocol.vtexassets.com/arquivos/ids/20817318/TITAN-SPIDER-MAN-FIGURA-DE-ACC-MARVEL-E7333-3005782_c.jpg?v=638398871486100000",
+        "tags": [
+            "Acción",
+            "Fantasía"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "14:30 p.m.",
+                "horaFin": "16:26 p.m.",
+                "sala": {
+                    "idsala": 4,
+                    "nombre": "sala 4"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "17:10 p.m.",
+                "horaFin": "19:06 p.m.",
+                "sala": {
+                    "idsala": 4,
+                    "nombre": "sala 4"
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Lego Classic",
+        "calificacion": 3,
+        "reviews": 256,
+        "sinopsis": "Con una amplia variedad de sets, Lego permite construir desde casas hasta naves espaciales.",
+        "img": "https://toysmart.co/cdn/shop/products/CAJAMEDIANADELADRILLOSCREATIVOS.jpg?v=1637708321",
+        "categoria": "Aventura",
+        "tags": [
+            "Familia"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "18:10 p.m.",
+                "horaFin": "19:55 p.m.",
+                "sala": {
+                    "idsala": 5,
+                    "nombre": "sala 5"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "20:30 p.m.",
+                "horaFin": "22:15 p.m.",
+                "sala": {
+                    "idsala": 5,
+                    "nombre": "sala 5"
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Uno Cartas",
+        "calificacion": 3,
+        "reviews": 180,
+        "sinopsis": "UNO es un juego de cartas muy popular y divertido, diseñado para jugadores de todas las edades. El objetivo principal es ser el primero en deshacerse de todas las cartas que tienes en la mano.",
+        "img": "https://static5.depositphotos.com/1028880/486/i/450/depositphotos_4869319-stock-illustration-uno-cards.jpg",
+        "categoria": "Aventura",
+        "tags": [
+            "Familia"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "14:10 p.m.",
+                "horaFin": "16:10 p.m.",
+                "sala": {
+                    "idsala": 6,
+                    "nombre": "sala 6"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "16:40 p.m.",
+                "horaFin": "18:40 p.m.",
+                "sala": {
+                    "idsala": 6,
+                    "nombre": "sala 6"
+                }
+            },
+            {
+                "horarioNum": 3,
+                "fecha": "25/05/2024",
+                "horaIni": "18:40 p.m.",
+                "horaFin": "20:40 p.m.",
+                "sala": {
+                    "idsala": 7,
+                    "nombre": "sala 7"
+                }
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Monopoly",
+        "calificacion": 5,
+        "reviews": 655,
+        "sinopsis": "El objetivo de Monopoly es acumular la mayor cantidad de riqueza a través de la compra, venta e intercambio de propiedades. El jugador que logre arruinar a todos los demás jugadores se convierte en el ganador.",
+        "img": "https://www.shutterstock.com/image-photo/kyiv-ukraine-november-15-2019-260nw-1598543521.jpg",
+        "categoria": "Aventura",
+        "tags": [
+            "Aventura",
+            "Acción",
+            "Ciencia ficción"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "15:20 p.m.",
+                "horaFin": "17:50 p.m.",
+                "sala": {
+                    "idsala": 7,
+                    "nombre": "sala 7"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "19:10 p.m.",
+                "horaFin": "21:40 p.m.",
+                "sala": {
+                    "idsala": 7,
+                    "nombre": "sala 7"
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "Carro control remoto",
+        "calificacion": 2,
+        "reviews": 320,
+        "sinopsis": "Vive increíbles aventuras llenas de velocidad y emoción con los Vehículos Nikko. Estos fabulosos Carros Nano Omnix cuentan con increíbles detalles y colores, además de funcionar con Radio Control para mayor diversión. Tiene una velocidad de hasta 14 km ",
+        "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUUExMWFhUXFxkXGBgXGBsfIBgdHiAYFhkZHRgYHikhGBolGxoYIjEhJSkrMC4uGR8zODMsNygtLisBCgoKDg0OGxAQGi4mHiUwLS4tLS0tLS0tLS0tLy0tLS0rLTctLS0tLS0rLS0tLSstLS0tLS0rLS0tLS0tLS0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHCAL/xABAEAABAwIEBAQDBAgGAgMBAAABAgMRAAQFEiExBkFRYQcTInEygZFCUqGxFBUjYnLB0fAzQ4KSsvGD4XOi0lP/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALREAAgIBAwMCBQMFAAAAAAAAAAECEQMEEjEhQVEFkRMyYXGBFSLwYqHB0eH/2gAMAwEAAhEDEQA/AO4AUigqtAUikVWlAUikVWlAUikVWlAUikVWlAUikVWlAUikVWlAUikVWlAUikVWlAUikVWqKUAJOgFAIpFQm848U84pnC7dV44k5VOzlYbPd0/GR0TvyNfIwDGH/Vc4mlgRq3aNCB/5XJUfpQE4ikVzrBuDTcsofRi2KgLEibnuR8ITEaVnK4dxe31tsTD4H+XdtAg/+Vv1D6UBN4pFQq047Uy4lnFLdVmtRhLs52HD2dHwE9FbczU1SoESDIOoNAIpFVpQFulKUB9iq1QVWgFKUoBSlKAUpWJfXoa9SwAjmqRIP8J3EdJPagOd8TY9dm5eUl1xhliUBMR5hGpWQoajp1FYvCfispRKLpBUkf5qBr/qRz/0/Q18eLeNsOpKG1ArR6CoOJywci9EJJUs6xMaa1zXCrkJQZTAGpMjX5b/APVbJJog9N2GJsviWnUL0CoSRIB1BI3E96y687cP4y6wtLzS4X9QUz8BHNP96Gu4cMcQtXjQUlSQ4APMbB1Qeeh1yzsdjVJRok3NKUqgFKUoBSlKAopQAk7VzlbjmOuqQham8KbUUrUkwq9UN0pUNQwDoSN/+Ox8R7tx0sYawopcvFEOLG7bCdXVdiR6R7mpbhti2w0hlpIS22kJSkcgNPme9AVw+xaYbS0yhLbaRCUpEAfIVquMMabtrN1wq1KShEaytQISPrr8q03iTxEthsMM/wCI4JUQYKU7aHkTqPYGuTZzBzQOZE6VlPLtfB62j9LeohvlLb46Hc+CEAYfagbeSj8QCfxreV50bxq8QIaultoiAEqJ0/IfKsrDuLL5sla7t5SAJ1I1/wBwVp8qvGcZdzDN6dmxy6K158neb+ybfbU26hLjahCkqEgj2NQBJcwFxIUpTmFOKCQVEqVZKJgAqOqmCdNdvf4reFeJRyjzU59AdBB5GZGh3HIVK7DF7XEWlskSFoIW2sbpOh1Gh35VO5XVmE9JmhHfKLo36VAgEGQdQRzqtQjw5uXGFP4Y8oqXaEeStW7luvVo9yn4T8hU3qTnLdKUoD7FVqgqtAKUpQClKUB8PuBKVKOyQTp21rz5xZjF3iLhWdW24ORI0aCthr8TmUST7V6AvI8tcmBlVJ6aGvMpv3W0KSFGFpg9SCBr8406A1pjRDNeySskRI90iPmUmri2VMrQo5SJ0nKsTvBEQR2IrCbRP9PyrZLQXPSn1BJTByhJ2EjTeJI57fKtCDs/D/C9nf2zVytGVTiYUloeWkZQWykJTyBBOaZMDWNKj+OcC3dmrzbVS3kJ1BTo839P8Qfw6n7prpPCWFm1s2GT8SUDN/EZUr8Sa29Y7mixzLhfxM2RdiRt5qRqDsfMbGx7p+groFji9u8YaeQsxMJUDp17jUfWtFxfwUxeJU4lOS4j0uIgFRGwWNljlr9RXFCh61ulIeJacSBlKMyCDMhaSoAnmJ2M1KSkD0rSuXcM+JhTlbvhI2D6B/zQNvcfSumW1yhxIW2oLSoSFJMg+xFVcWuQXaUpUAg/DifPxnELg7W6GbRs9JHmu+3qKanFQnw5/wAbFZ3/AFg59MjcVNqAjXGPC4u0hSCEvJ0BOyh90/iQa4/juBrsl/tbdQKphUgpV1AUCfpXoWuXeK2Jy6ln7LaAtX8SpgfJI/8AtVJRXJ6Wi1GVyjivord1dfYgFvbqd9IbOylQCJhIKiY30ANVGHLTlWUlIU3oV+mUEyFBKozZp09j0qY+E2FXCnV3OVos+ppRWTmMwo5QBHQakcxXS2sDa8pLLqUvIRo2HEglKRGVMneBpO5G87mHiSNP1SW7qrS9/wDRyDBuFbh50hBQpQAUo+YClOhSE5kggK1mBPOup8KcNps0EkhTqviI2H7o7d+fbat1bWyG0hLaEoSNkpAAHyFXasoJHLn12XKtt1HwQfidPkYvh1wnQPB20c7gjzWvf1BVTioR4mT5mFx8X6yY+mVyfwqb1Y4y3SlKA+xVaoKrQClK0+N8U2VnpcXDbaokIJlR7hCZUR8qA3FKgavF3CpjzXT38lyPxTNbrBeOMOu1BLN02VnZCpQo+yXACr5UBISJrjnFvhs+l5SrVvzWlmYCgFNmIghRGZMRtr2rslKlNoHC8K8J75Z/aeWymftKzH5JTp9SKlrfhKwlKAl9eYEZyUphQ5wB8JiYMmuj0qdzB8MthKQlIhKQAAOQGgFfdKVUCtZj2AW143kuGgscjspJ6pUNUmtnSgOI8T+Hl3Zyu3m5Y5pj9ogd0j4x3Tr251ouGuJn7RWa1cgT62F/CrrpyPcQa9F1zzxN4LauEeey1leBla206kRupI+P3GtXjLsyeTEwTxWQVZLlsp6qHL5fa16Qexr7vfFMJuShttDjXI5lBRH3pIgDtFccauhmKXCVD4QraIJ/vWsu0YDjgGfOgJJPXXQAxzkH6VfamVOzcJ3Ibxa9bn03bLF41308pzUaEzlqe1x9q1dasrbEGES5YOuShI1ct1wXkxzIkqHsa6vhl+3cNIeaUFNuJCkqHMHX5HtyrJqmSZNcG46vM9y+qd3SPkn0j/iK7NxJiIt7dxyYIED3P9NT8q864lf+YVFSTBUSCP8A3UU+jo6tNKKU7dNqkd48OLcIw5iPtArP+ok/lFSWvPOGYkQ2gJWRAj4tR9K3NvxNdI+F9z5qJ/BU1psbOU7bStBwTiqrm1C1nMsKUlRgCY1Gg02IrbYjfNsNLddUEttpKlKPIDU/9VRqnQIhxMrz8Yw63TqGEu3bo6CPKa9vUVVOKhPhzauPF/E30lLl4R5SFbt26dGh2KviPyqbVALdKUoD7FVqgqOccXjgabtmFZXrtwMJUN0JgrecHdLaVR+8U0Bh3eIv4g4tm0cLNs2ooeukgFS1D4mmJBGmynCDB0GomoV4nYfaWzDTNulIK3FFxU5nHFIBkLcVKlKkjc8663hlg3btIZaSEttpCUgcgP5965B4vXzLr6QhxJUhIQUgfakklSo1gQBHU/O0eQcyuGRJKoRB+BMk/ifzNZ+CYQhx1pLqktoWQZcSVgphShCEkFeYpy5RqSRVi0ZDj6E5c0uDQ/a11HzqR8B3tqhTgcEOOIDbTqxmDElQUsDrlVI7pG0k1ZkHQ8Fu77D0FxwOvYemM3mJKXWU83EIK1LUwnmlZzgSRoIPRGHkrSlaFBSVAKSoGQQdQQeYIr5tko8tITBRlAGsyI0156VGeF0/ol09Yf5WX9JtR91tRyutDshzUDkHEjlWZJLKUpQClKUApWvbxy2Usth9vOmQU5hOnxb7xz6Vosa41bRKWB5ivvH4R/NX5d6htLk2w4MmaW2CslTjqUiVEAbSTH51r3eIrNOirpgHoXUf1rkeMY048vMslah10Sn2Gw96+8MxxTU5FBJUJMpSe0gqGnvUbvodv6d2U1u8dvcv+JdphSh+k2y2l3JcTKG3AQuTqopBgH97vrNc+wTFfJdXnbC1LPP7KpPLYjX8qkfGKnn0JheYayFKJJ2IjMY5coqCZChUKBBHUVrCcXwzkz6XNh+eNLz29z0b4ZXKnLZ0LGoeI1IMgpQfs6AcorVPNO4E6pxtCnMLcUVONpEqs1HUrQObJOpHL8454V8TpbfLS3AlpaQkJ0/xCRCzOwgFOhPxD5doMGolyc5CuNsN/Wtm25ZuIdCVZ0woZViIInYKHQ9xpXPbbw/xEiFW5A7La36xm0rod9wF5bin8NuFWTqjK0JGZlw6fEydAdIlMRJ0r5TjmM2+lxhzdwOblo8B8/Kdg/jRSaVEp07IUjw8vP8A+Cvm41/JVfY8Pr7lbpHu8P5GpmeO39v1RiE//GiPrnr4OPY1cem3w1FuDs5dvAx38poZvxqts2eodUopfhDg21dw5l9V6W2WRlWFFyYOoVJJ6ZYFYaG3cdcStaFN4W2oKQhQhV6oahSkn4WAdQOf/HPs+AvNcS/idwq9cSZQ2RlYbP7rI0UeUqmelTUCNqNmLduwkACBoKrSlCC3SlKA+xUYuk58YYB2as3lgfvLcaRP+1JHzqTiovix8rFbNw/C8w/bT++Ch9A+YQ5QEV8W8Wfbu7NtDq20KBKsiiM0qCTMbwOvWoDjly0lSsqBGbKJ1JiMyie5qY+NjBF1aOcspSPcKCj84IrnWLrClgA7qP4mtY8EMwLS7LTqXE6qSrNrWfw9dhh5h5OuRYC0nvOx5gjN7EHtWqZZJVlSJJ216amrtof+aPyXUJ9Qdy8OMRL15fQtYbR5QbaKvQgFAJyp2T6grbrW84j9GIYa4N1LfZP8KmlOx/uaTUH8Gm1fp14v7GRIPvIj8Aam+MnzcTsWh/kofuV9pT+jon3Li4/gNUlySiUUpSoAqze3aGW1uOKCUISVKUdgBqSawMd4hYtEguq1PwpGqj8uneuZ8W8efpS2W0MLLCV51pXoHVJ1QFRu2kwopB9RAGnONyurNo6bLKO9RdeaNLxbh1ylLVz5K22FrU4DAJbQtQKc+koWqUmO8dRWK1iahceSJXIEap00G6tjzPzqvFvFNy8mXnFLSf8ALCciEHkFNjVR/jJFQ23vHEKLqQD100g8jHKr/N0aNYuenSnGfXwv8k7Zum3QoDSNCFf3rqKs3Vn06z/f9dai2HXqIeLhALgMGCYPMCNt+4rPw/HghHq+EAxA1B5JEn3PbSs5YnHrFnpYNfizfs1Cr6mUW3SqCojXRI/nvM6d6+Lstah2FRuBrk7k/Z/PtWtuMUefSotkIE5coPrUOs9Owj51qG0R6TpJyme8Qfkdazjgd75l8/q0Y4/gaePTy+t/Zfz7GzYdS2fSiJkCSSVCe2+wqT4VhmIuwttPlQPSpa1A9ogyke01Y8PMNUm481SMzQaIC1CPXmBEBWsxm1roeI4w2y2pajAGwnUnoK7F1PBap9Tf8AXF2u3m6WFkGEmNe4J+1Gmsdd6lFcjwXxTUgJaNshXq3QvKMuqlGVaFW55TrXSME4itbsE276HI3SD6h7p3HvtWckyptKUpVQKUpQClKUBbpSlAfYrT8WYOq6tylCsjyFJeYX911BzIJ/dOqT+6o1uBVaA0OCYgziFv+0bAWmW3mVgFTLgELSenUKG4IIrh/FOGNIvlMMhSyFhIEakkyAI3OoFdtxzh5S3f0m0cDF0AElREoeSNkPIBGYDkoepPKRpXLLKxftcWFziTKmm86nPMSFONAx6f2iAcoEz6oOlSnRKruQW0tpdSAecab9IA5mpvwh4bXLqwX2lstyDK4BMToETIOvOuis41gIUHEvYeFA5grMyCD16g1lK44t3NLNDt4vkGEHJO3qeXDaR/qntU7iDPSzaYbbuOelppIzrUdzyEndSjoAO4ArD4PsnFF29uElD1yUkIO7LKZDTR6K1UpX7yyOVWrPAH7l1FxiBSchCmbVsktNKGy1qIBedHIkBKeQnWpVVQKi3GXF7dmnKmC6dAOSZ2n+lZvGGMKtbZS0BJcIIRmIABjcz0/pXno4itb3mLUoqVo5JnN1UJ2POP7Bxk4ujo0rxLKvi/L/P7G+vbpbylPPKJJ3J59h2qtjYB5JdfWWrZKgnMFZdeiTzUOe+p26fNw42n0rBmBKRuhO4H7rihzPwJ1gqIFa/FMZLikjKDkGVppI9LY6JA59TueZqmHFtVy5PU9R1zzS+HidQX4RI7/g95DZcslNXbXMQCv5EGVe0z2qDi1U4TDWVQmeQHvmIA+ZrZYZjLlk4XvNKXD/lIgz2XukDtqfatdiF3dXzhWqTJnokdyTue9bt11bPIjCWR7YK39DWKQDyO/wCf/Qqly3pAiEiPnz+dSS3wH9mkJKVKnvPc6DQbb1cY4WzLJWoADeOfM6A6/WslqIUd79I1CklX/CK2LS1GEpJ9uVSS1wkspU47qsgwD15T2mPf2qaYXgyEpGQZTy9M/jpE9q1WPoSHckhQAE6fPb3P4VnKU5tLsd2PS4NNCc27kk/fjp+THteI3QUNJSFqUQhGka7ctCB2j3qzxdibS7hNqj1JakOLn43YIInkhGogRrm3r7w51aHFuIbzlplZ3AySDDmv3cp+tQW3WZ119/z712X2Pn5J8vuSK2vChSJSC2haVFB0CspmPY6/WuhcQ4/hV7Zu3DaA3etpCWkg+W6FqhLeUoILiZI6jQzFc+whDChmfJASOR32gkd/5d63/Djbd/dN27cMx+0S5kSVIU1CwQFaH1Rp71V0+pDi48nTMBubu0uWrO7e89LzalMukQoKbCS42oj4hCgQrfeplUXwjhZ1Fwm5u7xV040lSGv2aW0thcZ1ZUk5lEACelZF3xrh7a8irlGaYhMq156pBFZkEgpWLh+IMvpzsuIcTtKFAx2MbGsqoApSlAW6UpQH2KrVBVaAUpWLf4iywAXnUNgmAVqAk7wJ30oD7VZNEyW0E9con6xV4CuY4j4vtpUpLVuogTBWoDXkcqQdPnNW8L8YEkxcW5AkatGYGskpV8ufX2q21g6nSsPCcVZuWw4w4lxB5pO3YjdJ7HWsyqgjfH7zbdopxa8ikHM0YB9YCoEHkRmnoJPKuFobKxnQnnkKlEaK09SRO+4nqKmfjViKnn2rRqVqEDIncrVGg7xl9pNSy08OWP1e3ar9LqQVF1G+dRzGfvJBgR2ERWkZJINNHEsQYdb3kEk675idTr13NY9oFn05vLB+JUEk/TWO1b569Ta+aw80fMQqHEq9WY7TJ0gRy06TWL+t7TyiC0VOERpokD5R3O1WasspU+vX6Fqzt7YGE/tF/vyPwj+VbptOYwNv75VCFCIUDBFZTHELyec1x5NM5Pn3PoNF6ziwwaljp/08HRbVASmAI69T7nnV62ZTnUVmBoY5mowzj6ltiCEzoTzk6R2qVcM4I661MemSZP1JJP8AetPgSSs6f1bDkm4JtJrky38Q0yo0HX5R8/8A3WDhXDzlysuGUtzGYj4o+6OfvtUywbh1mAuQ6ZyjQ5ZG+/xD8NK3FxeqCFC1ZD60pOpIS3I2TnO50iEzHMprWCads8nW6vHKHwsPHd+SD+IVq3a4cW2UhHmrQ2pUaqGpOY89Aa4mowdNqlXGGM3r7qk3ZUFJMeURlCOcBPLTnqTO9RV3eK3PKMyxdiZiIgjqDyqlvdOsugtOKQtJkFCiNeu/Mf0rBza19FRUZOtVSpmkp7oJPlEzxDxDxC4t/Icd9MEKUhICnARGVcaRvMATOtR1twRA2/d9vu/3tWIntWVaNZ1ATl77z2qyRmbbCsRfaUFtuLbO4UlRhXUe4T9kzzrqvAnHzjzibe6AK1EpS6kQFKEiCBprGhEamI51zJFooNk6ekleSdY2JA6bmPemBuHz2spg50EGYywoalXL37c4FR+2ReeOcK3KrPSlKUrIoW6UpQH2KrVBVaA1+O4u3aMqec2SNEgiVnfKnMRJ7dq4Dxpjqry5W5KskgISozkHJIjQa+ox13MVMPFzGkuuC3CQfKPxJWCSVDKpMD4SBmBB19q50rKDmSokanbUSeZ2A2iN61gu5BiZ4315b8+pisRx+NB8+/0r5fenQbcqLtSBJI6RvUuSReMJSTaXBnYLxBc2iw4w6pCtNtlAclJOih7137hnjlq6sVXJypcbBDjeYD1a5YnZK40nuORrzxZWySfWdBy2n5xpW/K0AAb/AHUpTA+QGqjUONlDecK4k0MT/S75Zj1FJAKkpWeaomBqYjaa6Lx/xw1a2XmMOJcceBSyUKBHdeh+zI+ZFcTvn1mAfSPyHUgbfn2rVkBJVzOoB6dFA89u1HAluzJQ4VrLjvrykLXmmXFk6J6mT/PrV3G8Au2Wm7h5lSW3hIXpEkqIED4PTqAdxr1A3Phnh9rc3qG7laUpEqCVEgvL+FCJ7aqiZJjevQmIYYw+35bzSHG9DlWkEabaHaKhuiDyzbtFcKCBIUBIjXrKdp21j61gX0eYopAAzHQcvaamfHFuG8RcbYb8ppCycqEwkaJBMDQSUk/OtVZ8GYg+hDrdotTa9UqGXUTvGaR7kVNotTXJNfDnA2TaO3QbLjiAooT6ikkAKHoTqTJ2rf5HbtXl5lKyhMtsRlR+zykKP+G0QtSiQZURpHS/wd4dLaai5eWEKOY2yFEJmAIWoH1aASB9TXQbS1Q0gIbQlCE6BKQAB8hVWyDVYVgWRsIcMpknywTl11OY6Fz6AH7s61ukpAEAQBsBVaVQHK/EXw4fuXnLq2WFqXBU0qAZCQn0KOh2Ghj3qL3fg/fBkOJU2pyAVMzBHUBZ9JI+Q713ylTuYPO1l4W4kpcLt8o8tapLqICsqsifSomc+XlFRDELBxhxTTqChxByqSYkHQ7gkHTpXrivMfiEiMSu9IPnHSZ3AUD8xr86tF2CPt1vsFtARJJ6xH0/GtGgTFTXB7c+WI2n1dcsd+8fSmRtRbR2en4o5NRGM+OfYtvko8xWSE5fiOpVIAA7DUCKyPD/AAsP3jKFKgJIXATM5fXB5AECJNWcQabQgNoJUhAkq+8d4HYV0vwnwYN25fIUFukiDsUiIIHPWde9UxQcI2+50eq6mObKlHhE8pSlDyy3SlKA+xVaoKrQHmrii6S7dPOQEhSiSEH0zKgfqdSeprTX9wYyydQATyMSRtsJJ+lSTjnDyxfvpgJBXnED0wojKYO4CTGnOaiV5vHIbe1brgg+m0Zm83NM/T+/zrCzTvWfhKpVl5EGQeY5/OK+bu0GdYTAKeumbrHtVdt9Szk62p9CiGVAbpA6n6wOZ+lZjSITBKtfeIPxJyzzge9YCH/USDlkRqJjSNPatlcAKGhGaAfT8KxEynooc0+9WKll10fQQNtBroO2tYikzvpX0hUmBvWwZsm0wp5Wp2QnVSv/AM/OpBr2WVE/s0qKhqI3kayI2ivSnAeNqu7Bl9zReUpc/iQSkq7TE/OvOruJKIKWk+WAZAA9RGu6t67BwPeIbwNZWopH7VMgiRIk5QpQlUEmAZ96zmSjnN0XLy7dLYJU85kR8X+Yr2gRJ1kfyr0PhNgm3ZbZR8LaAgT2ETXKPBnAgp5x9UEMkpSQE6rUIO2xSmRGnxV2KszbNK3XgUpShiKUpQClKUArl3ip4fvXTv6XagKcyhLjegKsswtJOhVEAgnZIjoeo0qU6B5OetltrKXElC07pUCkj3BFbu0uk5QCJBI+u+/MaRXoLHOHrW8SBcMpXGyjopPsseofWo9beGGHpVmIdWOSVOGB/tAJ+ZrRTRBBeCeH3b55twoi2QZUTsuI9A+8TqD015wK7WwylCUoQkJSkAJSBAAGgAHIUt2ENpCEJCUpEBKQAAOgA2q5VJScmSKUpVQW6UpQH2KrVBVaAj3GHCjV+2Ao5HUatuASU84I+0kkDSuA8V8N3Fm4UPII6KE5VDqk7H23HQV6frExTDWblstvNpcQeSuvUHcHuNaspUDycy4UKChuDWyvX0lwQQpCgCDrKTz3/Ku1XXhDhy1AgvoH3UuCPqtKlfjUa8UeBre1ZaetEeWfNKVglagcwJBlROUDKRG3qq6kiDmv6rVqUkGdRqB+elW14bcDXIreZSJ/47VlKUvQKACthG2g0+X9KoppZg5oPONfoOVWBgquXEEj4VczEKHad0/KrEgjXflpvO8mr98UDQaq5/8Avv7VitqIOhiagF51A3Ohj4RqT3M7DtW6Rjtx+jJtwrKyF5ykfaJy/HBEgZQQIPWtW0xAkmfcTvsB3q8YJ0mQdAOvUjalEp0SnBON7y0bDTKkBAJJlAVM6klR9RPz2ip7wv4pocyou0hBOnmJBjlBUnUiTOomO3LjTSTOWdRrET+J69qvtJ0Bn0qMQN0nqB7zUbUG+7PUjD6VpCkKCkkSFJIII6gjerleduEeK37JxJQoltWUraJ0n7QH3VESQR01kaV3zBcTbumG32/gcSFCdxO4PcHQ+1UlGgZtKUqoFKUoBSlKAUpSgFKUoBSlKAt0pSgPsVWqCq0ApSlAKs3dsl1Cm1iUrSUn2OlXqUBwDjzgZ+01TK2p9Lg0ieSvun8D+FQh5Kk6E6ivWbzKVpKVJCkkQQRII6EHeoO94UYep0uHzYKpLYWMvtMZo+c1op+QefnW1KGaBEwSAdzrr3jWvq2tSVDbl3B+n1r1Ovh61Nv+jeQ35H3AmB76ahU65t51mvPHEOFos7q4YQrNklIMRm0C+R3GYAxuROlFKyDAK0+iBIA0kSSTsAOuhr5dZH3SIAkEiATr7qP9DX0ch0EpPpBiTIE6DoSOXferTpzq+GAOhJ20G9XAbaKpAHrjSOfcVmu2agCYmCSQCNOWw7fnWbY2mTSIkEA+/wDLWqtIWlRlIS2J5gk9zXJPUfuqJ7+D0hPFvy3b4rt9zTBes9TJrt3g1cqVZuIMQh0hPWClKjI5ak/KK4YzqR9a9BeFdsUYegkJGdSljKNxMAqPM6fSK6Z8Hg9yX0pSsgKUpQClKUApSlAKUpQClKUBbpSlAfYqtUFVoBSlKAUpSgFKUoBXnPxCWpWIXIUSVB1SRyITl9MfKvRlcl8YuGXCsXjQKk5QlyB8EbL9iNCeUd6tHkHKs8J30mRETI3J/vnWVgzUqHOev1isV5HOI3T9NNe9Z2HrIjX29/bnWjVroXxSjGacuE0bbIVFTZPqyH1dCddPaeVa27Km0FvMSTvJmBW6/WSsusA9U6Go/cuAkka66xqen1rmxaZp3I9zXerQnDbi5fS/CM3hLCV3NyhtsIKpmFnQhOqpEgqEchqRNek2WkpSEpASkCAAIAA2AA2FRLw04cVaWoLqEh5ZzEx6gIASCTsYnQbTUwrWTtngClKVUClKUApSlAKUpQClKUApSlAW6UpQH2KrVBVaAUpSgFKUoBSlKAVQiarSgOYcceGYXL1kAlWpUzsFTqSidAf3Tp0jnyZ9pbS1IcCkuJ3SoQU7ESD8I2PfSvVFWbi0bcjO2hcbZkgx9avGdEUea8Fwm4u3EtsIUsjQn7KftepWw0EfOuweHfAZsSXnlhTyk5cqfhQJzEAnVR2102qbtNpSISAB0AgfQV90lNskUpSqAUpSgFKUoBSlKAUpSgFKUoBSlKAt0pSgFKUoBSlKAUpSgFKUoBSlKAUpSgFKUoBSlKAUpSgFKUoBSlKAUpSgFKUoBSlKApSlKA//2Q==",
+        "categoria": "Acción",
+        "tags": [
+            "Aventura"
+        ],
+        "horario": [
+            {
+                "horarioNum": 1,
+                "fecha": "25/05/2024",
+                "horaIni": "18:30 p.m.",
+                "horaFin": "19:54 p.m.",
+                "sala": {
+                    "idsala": 3,
+                    "nombre": "sala 3"
+                }
+            },
+            {
+                "horarioNum": 2,
+                "fecha": "25/05/2024",
+                "horaIni": "20:40 p.m.",
+                "horaFin": "22:04 p.m.",
+                "sala": {
+                    "idsala": 3,
+                    "nombre": "sala 3"
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "Parque Hotwheels",
+        "calificacion": 4,
+        "reviews": 350,
+        "sinopsis": "Parque Garaje para Vehículos está perfectamente preparado para el ajetreado ir y venir de los pequeños conductores. .",
+        "img": "https://images.mattel.net/image/upload/w_360,h_360,c_pad/shop-emea-prod/products/dgash5skbnlrez5bxsc8_eb6f113b-e1c8-4823-9de6-88c719e604e5.png?v=1707522992",
+        "categoria": "Aventura",
+        "tags": [
+            "Familia"
+            
+        ]
+       
+    }
+]

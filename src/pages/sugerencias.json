@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "nombre": "Hocus Pocus 2",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7ze7YNmUaX81ufctGqt0AgHxRtL.jpg",
+        "sugerencia": "pinocho"
+    },
+    {
+        "id": 2,
+        "nombre": "Thor: Amor y Trueno",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z9ajF6E39Hg2pXUofmUYgZHvdX.jpg",
+        "sugerencia": "pinocho"
+    },
+    {
+        "id": 3,
+        "nombre": "El cuartel secreto",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hpH62pdEhkeXnbj4qchqz4QssuR.jpg",
+        "sugerencia": "pinocho"
+    },
+    {
+        "id": 4,
+        "nombre": "Spider Man: Lejos de casa",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
+        "sugerencia": "Toy Story 4"
+    },
+    {
+        "id": 5,
+        "nombre": "El rey León",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg",
+        "sugerencia": "Toy Story 4"
+    },
+    {
+        "id": 6,
+        "nombre": "Toy Story 3",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+        "sugerencia": "Toy Story 4"
+    },
+    {
+        "id": 7,
+        "nombre": "Onward",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4jiwsh6i9DeguL4iRgQkpkP7m11.jpg",
+        "sugerencia": "Sonic"
+    },
+    {
+        "id": 8,
+        "nombre": "Sonic the Hedgehog 2 ",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+        "sugerencia": "Sonic"
+    },
+    {
+        "id": 9,
+        "nombre": "Espías con disfraz",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/30YacPAcxpNemhhwX0PVUl9pVA3.jpg",
+        "sugerencia": "Sonic"
+    },
+    {
+        "id": 10,
+        "nombre": "Damsel",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/AgHbB9DCE9aE57zkHjSmseszh6e.jpg",
+        "sugerencia": "Madame Web"
+    },
+    {
+        "id": 11,
+        "nombre": "Después del fin del mundo",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cboUHkM1zA7m3SaCrf6dW5jGqqW.jpg",
+        "sugerencia": "Madame Web"
+    },
+    {
+        "id": 12,
+        "nombre": "El corazón del cazador",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wtqyNRawswvOfDmDI6n5bCS13pk.jpg",
+        "sugerencia": "Madame Web"
+    },
+    {
+        "id": 13,
+        "nombre": "BagHead: Contacto con la muerte",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5ssaCHmqvTZDVZtcNhNZTzfb7Nj.jpg",
+        "sugerencia": "Imaginario, juguete diabólico"
+    },
+    {
+        "id": 14,
+        "nombre": "Arcadian",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/spWV1eRzlDxvai8LbxwAWR0Vst4.jpg",
+        "sugerencia": "Imaginario, juguete diabólico"
+    },
+    {
+        "id": 15,
+        "nombre": "La primera profecía",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3hkYVMej2Cy4gHpeDTSjq4YVpvR.jpg",
+        "sugerencia": "Imaginario, juguete diabólico"
+    },
+    {
+        "id": 16,
+        "nombre": "Invisibles",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iiYQxyplSb1oHT32GYoV64yPXQ4.jpg",
+        "sugerencia": "La casa del terror"
+    },
+    {
+        "id": 17,
+        "nombre": "Hardware: Programado para matar",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/29WnkQ9wlvPCWEuWl7d2gtSZHQX.jpg",
+        "sugerencia": "La casa del terror"
+    },
+    {
+        "id": 18,
+        "nombre": "Nightmare radio",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/g7EYDfGgNEF1IQymS7EvDLKnpxT.jpg",
+        "sugerencia": "La casa del terror"
+    },
+    {
+        "id": 19,
+        "nombre": "Man",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lFapu01oEiS4l1JD8fusAXBjMeB.jpg",
+        "sugerencia": "Mansión encantada"
+    },
+    {
+        "id": 20,
+        "nombre": "Misterio en Venecia",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kWz6Aa2chxcNUgAQNooYS4yyLkC.jpg",
+        "sugerencia": "Mansión encantada"
+    },
+    {
+        "id": 21,
+        "nombre": "El amor está en el aire",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bmTnqJaaL4tipNCGpywoDooRdYJ.jpg",
+        "sugerencia": "Mansión encantada"
+    },
+    {
+        "id": 22,
+        "nombre": "Black panther",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lAPzezdc5E6DFnttJwCWXZ9A9C6.jpg",
+        "sugerencia": "Avenger: Infinity war"
+    },
+    {
+        "id": 23,
+        "nombre": "Ant-Man y la Avispa",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lwmCdtTvjnJZK79JKYkzkb0MFOP.jpg",
+        "sugerencia": "Avenger: Infinity war"
+    },
+    {
+        "id": 24,
+        "nombre": "Deadpool 2",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fgPTa4IS07Pygz0Q1WJnRgOP7r7.jpg",
+        "sugerencia": "Avenger: Infinity war"
+    },
+    {
+        "id": 25,
+        "nombre": "Alien: Covenant",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zecMELPbU5YMQpC81Z8ImaaXuf9.jpg",
+        "sugerencia": "Winnie The Poo: Miel Y Sangre"
+    },
+    {
+        "id": 26,
+        "nombre": "Bird Box",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg",
+        "sugerencia": "Winnie The Poo: Miel Y Sangre"
+    },
+    {
+        "id": 27,
+        "nombre": "Tarot",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fgPTa4IS07Pygz0Q1WJnRgOP7r7.jpg",
+        "sugerencia": "Winnie The Poo: Miel Y Sangre"
+    },
+    {
+        "id": 28,
+        "nombre": "Barbarian",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/idT5mnqPcJgSkvpDX7pJffBzdVH.jpg",
+        "sugerencia": "Terrifier 2 "
+    },
+    {
+        "id": 29,
+        "nombre": "Misery",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/23Y65uWaVMpqfbZTN3CT0aei4D5.jpg",
+        "sugerencia": "Terrifier 2 "
+    },
+    {
+        "id": 30,
+        "nombre": "Joker",
+        "img": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+        "sugerencia": "Terrifier 2 "
+    }
+]
