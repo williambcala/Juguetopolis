@@ -5,36 +5,24 @@ import 'react-multi-carousel/lib/styles.css';
 const ActionCategory = () => {
     const images = [
         {
-            title: 'Sonic, la película',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rK25c71fYVi0Bv7RrTChK7NAQjC.jpg',
+            title: 'Hasta el 30% próximamente',
+            imgSrc: 'https://i.pinimg.com/originals/2b/80/31/2b803105cff2f8b89e201691a9df1215.png',
         },
         {
-            title: 'Madame Web',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/blq050GHBt0Fzx1j9FvohaEuknJ.jpg',
-        },
-        {
-            title: 'Avengers: Infinity War',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ksBQ4oHQDdJwND8H90ay8CbMihU.jpg',
-        },
-        {
-            title: 'Próximamente',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iDABT5GD9OQmFiXM3wR0DJIxtkY.jpg',
-        },
-        {
-            title: 'Próximamente',
-            imgSrc: 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/3hmz48Vevx6Q3FwxBmNkNKPeLkx.jpg',
-        },
+            title: 'Hasta el 40% próximamente',
+            imgSrc: 'https://hasbrostore.cl/img/cms/Home%202024/marcas/Hasbro%20gaming%20(1).png',
+        }
     ];
 
     return (
         <div className="max-w-xl mx-auto px-4 py-8 bg-gray-900 rounded-lg shadow-lg" style={{ marginTop: "20px" }}>
             <div className="bg-gray-900 rounded-lg p-8">
-                <h1 className="text-4xl font-bold text-center mb-6 text-white">¡Explora la mejor tienda a tu disposición</h1>
+                <h1 className="text-4xl font-bold text-center mb-6 text-white">¡Conoce las mejores ofertas!</h1>
                 <p className="text-lg text-gray-300 leading-relaxed">
                     Vive la diversión con tus hijos, familiares
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mt-4">
-                    Prepárate para vivir una experiencia cinematográfica emocionante y llena de acción. Desde clásicos del género hasta los últimos estrenos, tenemos todo lo que necesitas para disfrutar al máximo de la adrenalina del cine de acción.
+                    Prepárate para vivir una experiencia como nunca en tu mejor tienda de juguetes, que te ofrece la mayor variedad y exclusividad de los mejores juguetes.
                 </p>
 
 

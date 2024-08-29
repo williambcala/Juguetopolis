@@ -5,36 +5,20 @@ import 'react-multi-carousel/lib/styles.css';
 const AdventureCategory = () => {
     const images = [
         {
-            title: 'Pinocho',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1yIM2QL0qLzWMjTGuMX12yZnBtb.jpg',
-        },
-        {
-            title: 'Toy Story 4',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yF1vPDuHVrAUMX5dy1tVMbAjkEL.jpg',
-        },
-        {
-            title: 'Próximamente',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fIUqk6Pjo3uf5RiOGT19KQ53ekq.jpg',
-        },
-        {
-            title: 'Próximamente',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg',
-        },
-        {
-            title: 'Próximamente',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fSRb7vyIP8rQpL0I47P3qUsEKX3.jpg',
-        },
+            title: '',
+            imgSrc: '',
+        }
+       
     ];
 
     return (
         <div className="max-w-xl mx-auto px-4 py-8 bg-emerald-950 rounded-lg shadow-lg" style={{ marginTop: "20px" }}>
             <div className="bg-emerald-950 rounded-lg p-8">
-                <h1 className="text-4xl font-bold text-center mb-6 text-white">¡Descubre la emoción de las Aventuras!</h1>
+                <h1 className="text-4xl font-bold text-center mb-6 text-white"></h1>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                    Embárcate en una odisea llena de misterio, peligro y descubrimientos asombrosos. En esta sección, encontrarás las mejores películas de aventuras que te transportarán a mundos fantásticos, repletos de desafíos emocionantes y personajes inolvidables.
+                    
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mt-4">
-                    Prepárate para vivir una experiencia cinematográfica emocionante y llena de aventuras. Desde épicas travesías por tierras desconocidas hasta emocionantes expediciones a lugares remotos, tenemos todo lo que necesitas para disfrutar al máximo del espíritu aventurero del cine.
                 </p>
 
 
@@ -46,7 +30,7 @@ const AdventureCategory = () => {
                     centerMode={false}
                     className=""
                     containerClass="carousel-container"
-                    customButtonGroup={<button>Group</button>}
+                    customButtonGroup={<button></button>}
                     dotListClass=""
                     draggable
                     focusOnSelect={false}

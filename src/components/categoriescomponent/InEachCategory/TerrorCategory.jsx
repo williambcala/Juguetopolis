@@ -5,25 +5,9 @@ import 'react-multi-carousel/lib/styles.css';
 const TerrorCategory = () => {
     const images = [
         {
-            title: 'Imaginario, Juguete Diabólico',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6jrq4lA5KV3oIFnCYGDueSMTENd.jpg',
-        },
-        {
-            title: 'La Casa Del Terror',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6fuNWZzY0RijO1Xpw46soazDFMb.jpg',
-        },
-        {
-            title: 'Winnie the Pooh: Miel y Sangre',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ZmbSkGEpXFufbDhgfTnSrFAguo.jpg',
-        },
-        {
-            title: 'Terrifier 2: El Payaso Siniestro',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6ZfvF7ZS8MJXe0YwRkPAtXNpXrG.jpg',
-        },
-        {
-            title: 'Próximamente',
-            imgSrc: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xbniRigN0Ao3KjH8ha7yySK1g2B.jpg',
-        },
+            title: ' ',
+            imgSrc: '',
+        }
     ];
 
     return (

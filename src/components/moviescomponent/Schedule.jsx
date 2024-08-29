@@ -10,9 +10,9 @@ export const Schedule = ({ schedule }) => {
         <h2 className="text-xl font-extrabold text-gray-900 sm:text-2xl dark:text-white">Precio de {title}</h2>
         <hr className="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
         <ul className="space-y-4 text-sm">
-          {schedule.map((horario, index) => (
+          {schedule.map((price, index) => (
             <li key={index}>
-              <p className="mb-2 text-gray-700 dark:text-gray-400">Precio:{50000}</p>
+              <p className="mb-2 text-gray-700 dark:text-gray-400">{}</p>
             </li>
           ))}
         </ul>

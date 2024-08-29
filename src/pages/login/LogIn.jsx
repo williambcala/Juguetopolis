@@ -49,10 +49,10 @@ const LogIn = ({ closeModal }) => {
               <label htmlFor="password" className="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Contraseña</label>
               <input type="password" value={password} onChange={onSetPassword} id="password" className="bg-red-50 border border-red-300 text-gray-900 text-base rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500" placeholder="•••••••••" required />
             </div>
-            <button type="submit" onClick={onClickLogin} className="text-white bg-red-700 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 w-full">Ingresar</button>
+            <button type="submit" onClick={onClickLogin} className="text-white bg-yellow-200 hover:bg-black-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 w-full">Ingresar</button>
             <br />
             <br />
-            <button type="button" onClick={onGoogleSignIn} className="text-white bg-red-700 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 w-full">Ingresar con Google</button>
+            <button type="button" onClick={onGoogleSignIn} className="text-white bg-yellow-200 hover:bg-black-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 w-full">Ingresar con Google</button>
             <Link to="/home/signup" onClick={(event) => onClickRegister(event)}  style={{ margin: "40px", display: "block", textAlign: "center", textDecoration: "none", color: "#000" }}>¿No tienes cuenta? Regístrate</Link>
           </>
         ) : (

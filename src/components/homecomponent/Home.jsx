@@ -38,6 +38,7 @@ function Home() {
                             puntuation={movie.calificacion}
                             reviews={movie.reviews}
                             categoria ={movie.categoria}
+                            price={movie.price}
                         />
                     ))}
                 </div>
