@@ -26,9 +26,9 @@ export const SolicitudHorario = () => {
         
   return (
     <>   
-        <button data-modal-target="static-modal" data-modal-toggle="static-modal" className="font-serif text-white bg-gradient-to-r from-red-500 via-red-700 to-red-600 hover:bg-gradient-to-br  focus:outline-none  dark:focus:ring-red-800 font-medium rounded-lg text-base px-5 py-2.5 text-center me-2 mb-2" 
+        <button data-modal-target="static-modal" data-modal-toggle="static-modal" className="font-serif text-black bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-500 hover:bg-gradient-to-br  focus:outline-none  dark:focus:ring-red-800 font-medium rounded-lg text-base px-5 py-2.5 text-center me-2 mb-2" 
         type="button"onClick={openModal}>
-        Comprar ahora
+         Reservar
       </button>
 
       {isModalOpen && (
@@ -36,7 +36,7 @@ export const SolicitudHorario = () => {
           <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-xl font-semibold text-gray-900">
-                Productos Disponibles
+                Juguetes Disponibles
               </h3>
 
               <button type="button" className="text-gray-400 hover:text-gray-700 focus:outline-none focus:text-gray-700"
