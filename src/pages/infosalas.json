@@ -2,7 +2,7 @@
     
     
     {
-        "id": 6,
+        "id": 1,
         "nombre": "Superman Hombre de Acero",
         "calificacion": 3,
         "reviews": 210,
@@ -44,6 +44,7 @@
         "calificacion": 4,
         "reviews": 410,
         "categoria": "Animada",
+        "price": 16.66,
         "sinopsis": "¡La muñeca que lo empezó todo! Con su icónico vestido a rayas y su cabello rubio, esta Barbie sigue siendo un ícono de estilo y elegancia. ¡Un clásico atemporal que nunca pasa de moda!.LLEVALA POR SOLO $50.900",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxXspAOR8aHoAdvJ0bQJjyt0o3i4UyGyW9Vg&s",
         "tags": [
@@ -82,6 +83,7 @@
         "sinopsis": "¡La maestra más divertida del recreo! Con su pizarra, tiza y una sonrisa contagiosa, esta Barbie demostró que las mujeres pueden ser inteligentes y exitosas en cualquier campo. ¡Incluso en la sala de clases!.LLEVALO POR SOLO $50.900",
         "img": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/128515737_01/w=1500,h=1500,fit=pad",
         "categoria": "Animada",
+        "price": 25.56,
          "tags": [
             "Ciencia ficción",
             "Familia"
@@ -115,6 +117,7 @@
         "calificacion": 2,
         "reviews": 210,
         "categoria": "Acción",
+        "price": 43.55,
         "sinopsis": "Spider-Man es un adolescente que lucha contra el crimen mientras intenta llevar una vida normal. Es conocido por su sentido del humor y su gran corazón.LLEVALO POR SOLO $70.900",
         "img": "https://exitocol.vtexassets.com/arquivos/ids/20817318/TITAN-SPIDER-MAN-FIGURA-DE-ACC-MARVEL-E7333-3005782_c.jpg?v=638398871486100000",
         "tags": [
@@ -152,6 +155,7 @@
         "sinopsis": "Con una amplia variedad de sets, Lego permite construir desde casas hasta naves espaciales.LLEVALO POR SOLO $182.900",
         "img": "https://toysmart.co/cdn/shop/products/CAJAMEDIANADELADRILLOSCREATIVOS.jpg?v=1637708321",
         "categoria": "Aventura",
+        "price": 55.78,
         "tags": [
             "Familia"
         ],
@@ -179,13 +183,14 @@
         ]
     },
     {
-        "id": 7,
+        "id": 6,
         "nombre": "Uno Cartas",
         "calificacion": 3,
         "reviews": 180,
         "sinopsis": "UNO es un juego de cartas muy popular y divertido, diseñado para jugadores de todas las edades. El objetivo principal es ser el primero en deshacerse de todas las cartas que tienes en la mano. LLEVALO POR SOLO $18.000",
         "img": "https://static5.depositphotos.com/1028880/486/i/450/depositphotos_4869319-stock-illustration-uno-cards.jpg",
         "categoria": "Aventura",
+        "price": 66.66,
         "tags": [
             "Familia"
         ],
@@ -223,13 +228,14 @@
         ]
     },
     {
-        "id": 8,
+        "id": 7,
         "nombre": "Monopoly",
         "calificacion": 5,
         "reviews": 655,
         "sinopsis": "El objetivo de Monopoly es acumular la mayor cantidad de riqueza a través de la compra, venta e intercambio de propiedades. El jugador que logre arruinar a todos los demás jugadores se convierte en el ganador. LLEVALO POR SOLO $190.900",
         "img": "https://www.shutterstock.com/image-photo/kyiv-ukraine-november-15-2019-260nw-1598543521.jpg",
         "categoria": "Aventura",
+        "price": 25.66,
         "tags": [
             "Aventura",
             "Familia"
@@ -258,13 +264,14 @@
         ]
     },
     {
-        "id": 9,
+        "id": 8,
         "nombre": "Parque carros Hotwheels",
         "calificacion": 2,
         "reviews": 320,
         "sinopsis": "Después de luchar contra las violentas criaturas de Hot Wheels™ City, los niños pueden conducir hacia la estación de reparación del centro de la ciudad para dejar sus vehículos listos para más aventuras. LLEVALO POR SOLO $66.400",
         "img": "https://miscelandia.vtexassets.com/arquivos/ids/243302-800-auto?v=638445611570900000&width=800&height=auto&aspect=true",
         "categoria": "Acción",
+        "price": 12.22,
         "tags": [
             "Aventura"
         ],
@@ -292,13 +299,14 @@
         ]
     },
     {
-        "id": 8,
+        "id": 9,
         "nombre": "Máquina misteriosa",
         "calificacion": 5,
         "reviews": 655,
         "sinopsis": "¡Máquina misteriosa! Este vehículo psicodélico siempre tiene todo lo que necesitas para tus aventuras. Abre las puertas traseras de la camioneta para revelar un monitor iluminado, donde puedes insertar tus tarjetas fantasma para aprender más sobre el misterio. LLEVALO POR SOLO $171.600",
         "img": "https://m.media-amazon.com/images/I/81lsmtxYEaL._AC_UF894,1000_QL80_.jpg",
         "categoria": "Aventura",
+        "price": 29.99,
         "tags": [
             "Familia",
             "Ciencia ficción"
@@ -327,13 +335,14 @@
         ]
     },
     {
-        "id": 6,
+        "id": 10,
         "nombre": "Dinosaurio tira dardos",
         "calificacion": 3,
         "reviews": 210,
         "sinopsis": " Los dinosaurios han invadido de nuevo la tierra, y esta vez necesitarán tu ayuda, apunta y gira su cañón en la dirección que quieras y luego con solo presionar el botón ¡Dispara!. LLEVALO POR $60.900",
         "img": "https://http2.mlstatic.com/D_NQ_NP_824322-MCO72849946720_112023-O.webp",
         "categoria": "Aventura",
+        "price": 29.99,
         "tags": [
             "Fantasía"
             
@@ -362,13 +371,14 @@
         ]
     },
     {
-        "id": 6,
+        "id": 11,
         "nombre": "Alarm Monster Truck - Mega Construx",
         "calificacion": 3,
         "reviews": 210,
         "sinopsis": " Prepárate para una acción monstruosa con el set de construcción Mega Hot Wheels 5 Alarm Monster Truck, inspirado en el modelo original de Monster Trucks de Hot Wheels. Con detalles auténticos de Hot Wheels.LLEVALO POR $94.900",
         "img": "https://exitocol.vteximg.com.br/arquivos/ids/20466354/Mega-HW-5-Alarm-MEGABLOKS-HHD19-3257139_a.jpg",
         "categoria": "Acción",
+        "price": 29.99,
         "tags": [
             "Aventura",
             "Fantasía"
@@ -398,13 +408,14 @@
         ]
     },
     {
-        "id": 6,
+        "id": 12,
         "nombre": "Batman",
         "calificacion": 3,
         "reviews": 210,
         "sinopsis": "¡Junto a Batman déjate llevar por las misiones más emocionantes! Ayuda a Batman a defender Ciudad Gótica de los Super villanos. LLEVALO POR SOLO $54.900",
         "img": "https://exitocol.vtexassets.com/arquivos/ids/23753277/juguete-muneco-figuras-de-accion-batman-dc-comic-4.jpg?v=638572810941530000",
         "categoria": "Acción",
+        "price": 29.99,
         "tags": [
             "Fantasía"
             
@@ -433,13 +444,14 @@
         ]
     },
     {
-        "id": 6,
+        "id": 13,
         "nombre": "NERF",
         "calificacion": 3,
         "reviews": 210,
         "sinopsis": "Con tu arma recargada siempre estarás a la acción. LLEVALO POR SOLO $54.900",
         "img": "https://images.unsplash.com/photo-1594950981383-6eb659d18fbf?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categoria": "Acción",
+        "price": 29.99,
         "tags": [
             "Familia"
             
@@ -468,7 +480,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 14,
         "nombre": "PLAY-DOH",
         "calificacion": 3,
         "reviews": 210,
@@ -505,7 +517,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 15,
         "nombre": "BEYBLADE",
         "calificacion": 3,
         "reviews": 210,
@@ -542,7 +554,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 16,
         "nombre": "Huevo Sorpresa Dino",
         "calificacion": 3,
         "reviews": 210,
@@ -578,7 +590,7 @@
             }
         ]
     }, {
-        "id": 6,
+        "id": 17,
         "nombre": "COZY SCOOT",
         "calificacion": 3,
         "reviews": 210,
@@ -615,7 +627,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 18,
         "nombre": "Perrito aprende contigo",
         "calificacion": 3,
         "reviews": 210,
@@ -651,7 +663,7 @@
             }
         ]
     }, {
-        "id": 6,
+        "id": 19,
         "nombre": "Masa Moldeable Play-Doh Mini Empaque X4 Latas 224g (8 Oz)",
         "calificacion": 3,
         "reviews": 210,
@@ -688,7 +700,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 20,
         "nombre": "Rompecabezas 3D Torre De Pisa - 8 Pz Nv Inicial - Cubic Fun",
         "calificacion": 3,
         "reviews": 210,
