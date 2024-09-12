@@ -3,7 +3,7 @@ import { Dropdown } from "flowbite-react";
 
 const FilterComponent = ({ handleTagSelect }) => {
     return (
-        <Dropdown label="Filtrar" color="red">
+        <Dropdown label="Filtrar" color="blue">
             {['Acción', 'Aventura', 'Fantasía', 'Familia'].map(tag => (
                 <Dropdown.Item key={tag} onClick={() => handleTagSelect(tag)}>{tag}</Dropdown.Item>
             ))}
