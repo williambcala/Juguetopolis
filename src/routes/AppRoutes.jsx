@@ -12,11 +12,13 @@ import TerrorCategory from '../components/categoriescomponent/InEachCategory/Ter
 import ReservaPage from "../pages/reserva/ReservaPage";
 import SignUp from '../pages/login/SignUp';
 import AboutUs from '../pages/aboutus/AboutUs';
+import Cart from '../components/homecomponent/Cart';
 
 const AppRoutes = () => {
     let routes = useRoutes([
         { path: '/', element: <Home /> },
         { path: '/home', element: <Home /> },
+        { path: '/cart', element: <Cart /> },
         { path: '/aboutus', element: <AboutUs /> },
         { path: '/home/signup', element: <SignUp /> },
         { path: '/movie/:id', element: <InMovie /> },
