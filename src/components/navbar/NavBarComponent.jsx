@@ -59,7 +59,7 @@ const NavbarComponent = () => {
         <NavbarCollapse>
           <Link to="/home" className="text-gray-200 text-xl hover:text-blue-700 transition duration-200">Juguetes</Link>
           <Link to="/cart" className="text-gray-200 text-xl hover:text-blue-700 transition duration-200">Carrito</Link>
-          <Link to="/cartelera" className="text-gray-200 text-xl hover:text-blue-700 transition duration-200">Marcas</Link>
+          <Link to="/cartelera" className="text-gray-200 text-xl hover:text-blue-700 transition duration-200">Fundaciones</Link>
           <Link to="/categoria" className="text-gray-200 text-xl hover:text-blue-700 transition duration-200">Ofertas</Link>
           <Link to="/aboutus" className="text-gray-200 text-xl hover:text-blue-700 transition duration-200">Nuevo</Link>
         </NavbarCollapse>
