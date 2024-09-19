@@ -13,7 +13,7 @@ function Home() {
     };
 
     useEffect(() => {
-        setSelectedTag(""); //para setear el estado del filtro 
+        setSelectedTag(""); // Para resetear el estado del filtro al cambiar de ubicación
     }, [location]);
 
     const filteredMovies = selectedTag
@@ -21,27 +21,28 @@ function Home() {
         : infosalas;
 
     return (
-        <div>
-            <div className="w-full mx-auto mt-4 px-4 py-4px">
+        <div className="container mx-auto px-4 py-6">
+            <h1 className="text-4xl font-extrabold text-center text-blue-700 mb-8 tracking-wide leading-tight">
+                🎉 ¡Descubre Nuestros Productos! 🧸</h1>
 
-                <FilterComponent handleTagSelect={handleTagSelect} />
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-                    {filteredMovies.map((movie) => (
-                        <MovieCard
-                            key={movie.id}
-                            movieId={movie.id}
-                            title={movie.nombre}
-                            description={movie.sinopsis}
-                            imgSrc={movie.img}
-                            imgAlt={movie.nombre}
-                            schedule={movie.horario}
-                            puntuation={movie.calificacion}
-                            reviews={movie.reviews}
-                            categoria ={movie.categoria}
-                            price={movie.price}
-                        />
-                    ))}
-                </div>
+            <FilterComponent handleTagSelect={handleTagSelect} />
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+                {filteredMovies.map((movie) => (
+                    <MovieCard
+                        key={movie.id}
+                        movieId={movie.id}
+                        title={movie.nombre}
+                        description={movie.sinopsis}
+                        imgSrc={movie.img}
+                        imgAlt={movie.nombre}
+                        schedule={movie.horario}
+                        puntuation={movie.calificacion}
+                        reviews={movie.reviews}
+                        categoria={movie.categoria}
+                        price={movie.price}
+                    />
+                ))}
             </div>
         </div>
     );
