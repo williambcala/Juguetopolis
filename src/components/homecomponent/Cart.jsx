@@ -10,9 +10,13 @@ function Cart() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [address, setAddress] = useState('');
     const [paymentMethod, setPaymentMethod] = useState('');
+    const [selectedFoundation, setSelectedFoundation] = useState('');
+    const [donationAmount, setDonationAmount] = useState(0);
+    const [showSummary, setShowSummary] = useState(false); // Nuevo estado para mostrar el resumen
+    const [purchaseData, setPurchaseData] = useState({}); // Estado para almacenar los datos de la compra
 
     const handleQuantityChange = (movieId, newQuantity) => {
-        if (newQuantity < 1) return; // No permitir cantidades menores a 1
+        if (newQuantity < 1) return;
         setQuantities((prevQuantities) => ({
             ...prevQuantities,
             [movieId]: newQuantity,
@@ -51,25 +55,40 @@ function Cart() {
     };
 
     const handleOk = () => {
-        // Verifica si la dirección y el método de pago están llenos
-        if (!address || !paymentMethod) {
-            message.error('Por favor completa la dirección de envío y el método de pago.');
+        if (!address || !paymentMethod || !selectedFoundation) {
+            message.error('Por favor completa todos los campos antes de proceder.');
             return;
         }
 
-        // Lógica para proceder con la compra
-        console.log('Dirección:', address);
-        console.log('Método de pago:', paymentMethod);
+        // Si el usuario no especifica una donación, consideramos el monto como 0
+        const donation = donationAmount ? parseFloat(donationAmount) : 0;
+        const totalWithDonation = getTotalPrice() + donation;
+
+        setPurchaseData({
+            address,
+            paymentMethod,
+            selectedFoundation: donation > 0 ? selectedFoundation : 'N/A', // Fundación solo si hay donación
+            donationAmount: donation,
+            total: totalWithDonation,
+        });
 
         // Simula el éxito de la compra
         message.success('Compra exitosa');
 
-        // Cierra el modal
+        // Solo muestra el mensaje de agradecimiento por la donación si se ha donado
+        if (donation > 0) {
+            message.success(`Donación enviada, la fundación ${selectedFoundation} se lo agradece.`);
+        }
+
+        // Cierra el modal y muestra el resumen
         setIsModalVisible(false);
+        setShowSummary(true);
 
         // Resetea el formulario
         setAddress('');
         setPaymentMethod('');
+        setSelectedFoundation('');
+        setDonationAmount(0);
     };
 
     const handleCancel = () => {
@@ -134,7 +153,7 @@ function Cart() {
                         cancelText="Cancelar"
                     >
                         <div>
-                            <h3>Resumen de los productos:</h3>
+                            <h3>Resumen de los juguetes:</h3>
                             <ul>
                                 {cartItems.map((item) => (
                                     <li key={item.movieId}>
@@ -142,7 +161,8 @@ function Cart() {
                                     </li>
                                 ))}
                             </ul>
-                            <h3 className="mt-4">Total: ${getTotalPrice()}</h3>
+
+                            <h3 className="mt-4">Total con donación: ${(getTotalPrice() + parseFloat(donationAmount || 0)).toFixed(2)}</h3>
 
                             <Form layout="vertical">
                                 <Form.Item label="Dirección de envío" required>
@@ -164,9 +184,42 @@ function Cart() {
                                         <Option value="cash">Pago en Efectivo</Option>
                                     </Select>
                                 </Form.Item>
+
+                                <Form.Item label="Seleccionar fundación" >
+                                    <Select
+                                        placeholder="Selecciona una fundación"
+                                        value={selectedFoundation}
+                                        onChange={(value) => setSelectedFoundation(value)}
+                                    >
+                                        <Option value="Fundación Jera">Fundación Jera</Option>
+                                        <Option value="Fundación Chiquitines">Fundación Chiquitines</Option>
+                                        <Option value="Casita de Belén">Casita de Belén</Option>
+                                    </Select>
+                                </Form.Item>
+
+                                <Form.Item label="Monto de la donación">
+                                    <Input
+                                        type="number"
+                                        min="0"
+                                        placeholder="Ingresa el monto a donar (opcional)"
+                                        value={donationAmount}
+                                        onChange={(e) => setDonationAmount(e.target.value)}
+                                    />
+                                </Form.Item>
                             </Form>
                         </div>
                     </Modal>
+
+                    {showSummary && (
+                        <div className="mt-8 p-4 border rounded-lg shadow-md bg-gray-100">
+                            <h3 className="text-xl font-bold">Resumen de tu compra:</h3>
+                            <p><strong>Dirección de envío:</strong> {purchaseData.address}</p>
+                            <p><strong>Método de pago:</strong> {purchaseData.paymentMethod}</p>
+                            <p><strong>Fundación seleccionada:</strong> {purchaseData.selectedFoundation}</p>
+                            <p><strong>Monto de la donación:</strong> ${parseFloat(purchaseData.donationAmount).toFixed(2)}</p>
+                            <p><strong>Total con donación:</strong> ${purchaseData.total.toFixed(2)}</p>
+                        </div>
+                    )}
                 </div>
             )}
         </div>
@@ -174,3 +227,5 @@ function Cart() {
 }
 
 export default Cart;
+
+
