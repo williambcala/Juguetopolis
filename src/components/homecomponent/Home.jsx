@@ -40,6 +40,7 @@ function Home() {
                         puntuation={movie.calificacion}
                         reviews={movie.reviews}
                         categoria={movie.categoria}
+                        cantidad={movie.cantidad}
                         price={movie.price}
                     />
                 ))}

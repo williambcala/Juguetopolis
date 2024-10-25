@@ -11,12 +11,12 @@ function Cart() {
     const [address, setAddress] = useState('');
     const [paymentMethod, setPaymentMethod] = useState('');
     const [selectedFoundation, setSelectedFoundation] = useState('');
-    const [donationAmount, setDonationAmount] = useState(0);
-    const [showSummary, setShowSummary] = useState(false); // Nuevo estado para mostrar el resumen
-    const [purchaseData, setPurchaseData] = useState({}); // Estado para almacenar los datos de la compra
+    const [donationAmount, setDonationAmount] = useState('');
+    const [showSummary, setShowSummary] = useState(false);
+    const [purchaseData, setPurchaseData] = useState({});
 
-    const handleQuantityChange = (movieId, newQuantity) => {
-        if (newQuantity < 1) return;
+    const handleQuantityChange = (movieId, newQuantity, stock) => {
+        if (newQuantity < 1 || newQuantity > stock) return;
         setQuantities((prevQuantities) => ({
             ...prevQuantities,
             [movieId]: newQuantity,
@@ -24,10 +24,14 @@ function Cart() {
         updateItemQuantity(movieId, newQuantity);
     };
 
-    const incrementQuantity = (movieId) => {
+    const incrementQuantity = (movieId, stock) => {
         setQuantities((prevQuantities) => {
             const newQuantity = (prevQuantities[movieId] || 1) + 1;
-            handleQuantityChange(movieId, newQuantity);
+            if (newQuantity > stock) {
+                message.warning(`Solo hay ${stock} unidades disponibles.`);
+                return prevQuantities;
+            }
+            handleQuantityChange(movieId, newQuantity, stock);
             return {
                 ...prevQuantities,
                 [movieId]: newQuantity,
@@ -55,14 +59,22 @@ function Cart() {
     };
 
     const handleOk = () => {
-        if (!address || !paymentMethod || !selectedFoundation) {
-            message.error('Por favor completa todos los campos antes de proceder.');
+        // Validación de los campos obligatorios
+        if (!address || !paymentMethod) {
+            message.error('Por favor completa todos los campos obligatorios antes de proceder.');
             return;
         }
 
-        // Si el usuario no especifica una donación, consideramos el monto como 0
-        const donation = donationAmount ? parseFloat(donationAmount) : 0;
-        const totalWithDonation = getTotalPrice() + donation;
+        // Validación del monto de la donación
+        const donation = parseFloat(donationAmount);
+
+        // Verifica si el monto de la donación es un número y es mayor o igual a 0
+        if (donationAmount && (isNaN(donation) || donation < 0)) {
+            message.error('Por favor ingresa un monto válido para la donación (solo números y mayor o igual a 0).');
+            return;
+        }
+
+        const totalWithDonation = getTotalPrice() + (isNaN(donation) ? 0 : donation);
 
         setPurchaseData({
             address,
@@ -88,7 +100,7 @@ function Cart() {
         setAddress('');
         setPaymentMethod('');
         setSelectedFoundation('');
-        setDonationAmount(0);
+        setDonationAmount('');
     };
 
     const handleCancel = () => {
@@ -119,11 +131,12 @@ function Cart() {
                                     type="number"
                                     min="1"
                                     value={quantities[item.movieId] || item.quantity}
+                                    placeholder='1'
                                     readOnly
                                     className="w-16 p-1 border rounded-lg text-center mx-2"
                                 />
                                 <button
-                                    onClick={() => incrementQuantity(item.movieId)}
+                                    onClick={() => incrementQuantity(item.movieId, item.cantidad)} // Paso el stock disponible (item.cantidad)
                                     className="bg-gray-500 text-white p-2 rounded-lg"
                                 >
                                     +
@@ -144,7 +157,7 @@ function Cart() {
                     </Button>
 
                     <Modal
-                        title="Resumen de la Compra"
+                        title="Resumen de pedido"
                         visible={isModalVisible}
                         onOk={handleOk}
                         onCancel={handleCancel}
@@ -185,40 +198,57 @@ function Cart() {
                                     </Select>
                                 </Form.Item>
 
-                                <Form.Item label="Seleccionar fundación" >
-                                    <Select
-                                        placeholder="Selecciona una fundación"
-                                        value={selectedFoundation}
-                                        onChange={(value) => setSelectedFoundation(value)}
-                                    >
-                                        <Option value="Fundación Jera">Fundación Jera</Option>
-                                        <Option value="Fundación Chiquitines">Fundación Chiquitines</Option>
-                                        <Option value="Casita de Belén">Casita de Belén</Option>
-                                    </Select>
-                                </Form.Item>
-
-                                <Form.Item label="Monto de la donación">
+                                {/* Campo de donación opcional */}
+                                <Form.Item label="Monto de la donación (opcional)">
                                     <Input
-                                        type="number"
-                                        min="0"
+                                        type="text" // Usar tipo "text" para validar mejor la entrada
                                         placeholder="Ingresa el monto a donar (opcional)"
                                         value={donationAmount}
-                                        onChange={(e) => setDonationAmount(e.target.value)}
+                                        onChange={(e) => {
+                                            const value = e.target.value;
+
+                                            // Filtrar solo caracteres numéricos
+                                            const filteredValue = value.replace(/[^0-9]/g, '');
+                                            setDonationAmount(filteredValue);
+                                        }}
                                     />
                                 </Form.Item>
+
+                                {/* Mostrar la selección de fundación solo si hay donación */}
+                                {parseFloat(donationAmount) > 0 && (
+                                    <Form.Item label="Seleccionar fundación">
+                                        <Select
+                                            placeholder="Selecciona una fundación"
+                                            value={selectedFoundation}
+                                            onChange={(value) => setSelectedFoundation(value)}
+                                        >
+                                            <Option value="Fundación Jera">Fundación Jera</Option>
+                                            <Option value="Fundación Chiquitines">Fundación Chiquitines</Option>
+                                            <Option value="Casita de Belén">Casita de Belén</Option>
+                                        </Select>
+                                    </Form.Item>
+                                )}
                             </Form>
                         </div>
                     </Modal>
 
+                    {/* Resumen de la compra */}
                     {showSummary && (
                         <div className="mt-8 p-4 border rounded-lg shadow-md bg-gray-100">
-                            <h3 className="text-xl font-bold">Resumen de tu compra:</h3>
-                            <p><strong>Dirección de envío:</strong> {purchaseData.address}</p>
-                            <p><strong>Método de pago:</strong> {purchaseData.paymentMethod}</p>
-                            <p><strong>Fundación seleccionada:</strong> {purchaseData.selectedFoundation}</p>
-                            <p><strong>Monto de la donación:</strong> ${parseFloat(purchaseData.donationAmount).toFixed(2)}</p>
-                            <p><strong>Total con donación:</strong> ${purchaseData.total.toFixed(2)}</p>
-                        </div>
+                        <h3 className="text-xl font-bold">Resumen de tu compra:</h3>
+                        <p><strong>Dirección de envío:</strong> {purchaseData.address || 'No disponible'}</p>
+                        <p><strong>Método de pago:</strong> {purchaseData.paymentMethod || 'No disponible'}</p>
+                
+                        {/* Solo muestra la fundación y monto de donación si hay una donación */}
+                        {parseFloat(purchaseData.donationAmount) > 0 && (
+                            <>
+                                <p><strong>Fundación seleccionada:</strong> {purchaseData.selectedFoundation || 'No disponible'}</p>
+                                <p><strong>Monto de la donación:</strong> ${parseFloat(purchaseData.donationAmount).toFixed(2)}</p>
+                            </>
+                        )}
+                
+                        <p><strong>Total con donación:</strong> ${parseFloat(purchaseData.total).toFixed(2)}</p>
+                    </div>
                     )}
                 </div>
             )}
@@ -227,5 +257,3 @@ function Cart() {
 }
 
 export default Cart;
-
-

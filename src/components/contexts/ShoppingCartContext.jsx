@@ -1,4 +1,3 @@
-// ShoppingCartContext.jsx
 import React, { createContext, useState, useContext } from 'react';
 
 // Crear el contexto
@@ -15,7 +14,22 @@ export function ShoppingCartProvider({ children }) {
 
     // Función para agregar un artículo al carrito
     const addToCart = (movie) => {
-        setCartItems((prevItems) => [...prevItems, movie]);
+        setCartItems((prevItems) => {
+            // Verificar si el artículo ya existe en el carrito
+            const existingItem = prevItems.find(item => item.movieId === movie.movieId);
+
+            if (existingItem) {
+                // Si ya existe, incrementar la cantidad
+                return prevItems.map(item =>
+                    item.movieId === movie.movieId
+                        ? { ...item, quantity: (item.quantity || 1) + 1 } // Aumentar la cantidad
+                        : item
+                );
+            }
+
+            // Si no existe, agregar el nuevo artículo
+            return [...prevItems, { ...movie, quantity: 1 }]; // Inicializar cantidad en 1
+        });
     };
 
     // Función para remover un artículo del carrito

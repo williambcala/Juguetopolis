@@ -1,15 +1,40 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
+import { Modal, Button, Form, Input,  message } from "antd";
 
-export function MovieCard({ movieId, title, description, imgSrc, imgAlt, schedule, puntuation, reviews, categoria, price }) {
+export function MovieCard({ movieId, title, description, imgSrc, imgAlt, schedule, puntuation, reviews, categoria, cantidad, price }) {
     const [showDescription, setShowDescription] = useState(false);
     const { addToCart } = useShoppingCart(); // Usar el contexto del carrito
-    
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [form] = Form.useForm(); // Instanciar el formulario
+
     const handleAddToCart = (e) => {
         e.preventDefault(); // Prevenir la navegación al hacer clic en el botón
-        const movie = { movieId, title, description, imgSrc, schedule, puntuation, reviews, categoria, price };
+        const movie = { movieId, title, description, imgSrc, schedule, puntuation, reviews, categoria, cantidad, price };
         addToCart(movie);
+    };
+
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleOk = () => {
+        form.validateFields()
+            .then(values => {
+                // Aquí puedes manejar el envío de la información de contacto
+                console.log("Información de contacto:", values);
+                setIsModalOpen(false);
+                message.success('Reserva Exitosa');
+                form.resetFields(); // Reiniciar el formulario después de enviarlo
+            })
+            .catch(info => {
+                console.log("Validación fallida:", info);
+            });
+    };
+
+    const handleCancel = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -29,10 +54,58 @@ export function MovieCard({ movieId, title, description, imgSrc, imgAlt, schedul
                     </div>
                 </div>
             </Link>
-            {/* Botón para agregar al carrito */}
-            <button onClick={handleAddToCart} className="mt-2 p-2 bg-blue-500 text-white rounded-lg">
-                Agregar al carrito - ${price}
-            </button>
+
+            {/* Condicional para mostrar el botón según la cantidad */}
+            {cantidad > 0 ? (
+                <button onClick={handleAddToCart} className="mt-2 p-2 bg-blue-500 text-white rounded-lg">
+                    Agregar al carrito - ${price}
+                </button>
+            ) : (
+                <button onClick={showModal} className="mt-2 p-2 bg-red-500 text-white rounded-lg">
+                    Reservar
+                </button>
+            )}
+
+            {/* Modal para la reserva */}
+            <Modal
+                title="Reserva de juguete"
+                open={isModalOpen}
+                onOk={handleOk}
+                onCancel={handleCancel}
+                okText="Reservar"
+                okButtonProps={{ style: { backgroundColor: '#ff5733', borderColor: '#ff5733', color: 'white' } }}
+                cancelText="Cancelar"
+            >
+                <p>{title} no está disponible en este momento. Déjanos tu información de contacto y te avisaremos cuando haya disponibilidad.</p>
+                
+                {/* Formulario dentro del modal */}
+                <Form
+                    form={form}
+                    layout="vertical"
+                    name="contact_form"
+                    okButtonProps={{ style: { backgroundColor: '#ff5733', borderColor: '#ff5733', color: 'white' } }}
+                    initialValues={{ remember: true }}
+                >
+                    <Form.Item
+                        label="Nombre"
+                        name="name"
+                        rules={[{ required: true, message: 'Por favor, ingresa tu nombre' }]}
+                    >
+                        <Input placeholder="Tu nombre" />
+                    </Form.Item>
+
+                    <Form.Item
+                        label="Correo Electrónico"
+                        name="email"
+                        rules={[
+                            { required: true, message: 'Por favor, ingresa tu correo electrónico' },
+                            { type: 'email', message: 'Por favor, ingresa un correo electrónico válido' }
+                        ]}
+                    >
+                        <Input placeholder="Tu correo electrónico" />
+                    </Form.Item>
+                </Form>
+            </Modal>
         </div>
     );
 }
